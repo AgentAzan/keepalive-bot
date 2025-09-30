@@ -1676,7 +1676,7 @@ async function registerSlashCommands() {
     // 2. Also deploy to the development/testing guild ID for immediate availability
     if (GUILD_ID) {
       await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: client.slashCommands });
-      log('Also registered slash commands to DEVELOPMENT guild', GUILD_ID);
+      log('Slash commands registered globally', GUILD_ID);
     }
   } catch (e) {
     console.error('Failed to register slash commands', e);

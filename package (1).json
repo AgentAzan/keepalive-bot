@@ -1,0 +1,11 @@
+{
+  "name": "keepalive-bot",
+  "version": "1.0.0",
+  "main": "keepalive.js",
+  "scripts": {
+    "start": "node keepalive.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
